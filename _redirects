@@ -2,4 +2,3 @@
 
 # Redirect domain aliases to primary domain
 https://tho.sh/* https://san.tho.sh/:splat 301!
-/san/*  https://san.tho.sh/:splat  200
