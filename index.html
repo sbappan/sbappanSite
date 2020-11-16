@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,72 @@
 	<title>
 		Santhosh's Portfolio
 	</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
 </head>
+
 <body>
-	<div>
+	<header>
 		<nav>
-			<a href="#">Santhosh B. Appan</a>
+			<a href="#">SBA</a>
 		</nav>
-	</div>
-	<div>
+	</header>
+	<section class="intro">
+		<h2>Santhosh B. Appan</h2>
+		<p class="tagLine">Hello! I’m a Front-End Developer based in Ontario, Canada.</p>
+	</section>
+	<section class="portfolio">
 		<div>
-			<p class="text-success text-center">Hi, am Santhosh B. Appan. I am a Front-End Developer with about 2 years of experience. </br>Check out my portfolio below.</p></br></br>  
+			<a href="https://gatherapp.xyz/" 	target="_blank">
+				<img src="./images/gatherApp.png">
+			</a>
+			<div>
+				<h3>Gather</h3>
+				<a href="https://gatherapp.xyz/" target="_blank" class="demoBtn">View demo</a>
+				<a href="https://github.com/sbappan/gatherFrontEnd" target="_blank" class="repoBtn">Github repo</a>
+			</div>
 		</div>
-		<div id="portfolio">
-			<h3 class="text-danger text-center"> Portfolio </h3>
-			<div class="row text-center">
-				<div class="col-sm-4"><a href="https://trentonsmilesdental.ca" target="_blank"><img class="thumbnail" src="./images/trentonSmiles.png"></a></div>
-				<div class="col-sm-4"><a href="https://scripteam.co" target="_blank"><img class="thumbnail" src="./images/scripteam.png"></a></div>
-			</div></br>
+		<div>
+			<a href="https://trentonsmilesdental.ca" 	target="_blank">
+				<img src="./images/trentonSmiles.png">
+			</a>
+			<div>
+				<h3>Trenton Smiles Dental</h3>
+				<a href="https://trentonsmilesdental.ca" target="_blank" class="demoBtn">View site</a>
+			</div>
 		</div>
-	</div>
-	<div>
-			<h6>Find me on the Web</h6>
-			<a href="https://www.github.com/sbappan" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-			<a href="https://www.linkedin.com/in/sbappan/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-	</div>
+		<div>
+			<a href="https://scripteam.netlify.app/" target="_blank">
+				<img src="./images/scripteam.png">
+			</a>
+			<div>
+				<h3>Scripteam</h3>
+				<a href="https://scripteam.netlify.app/" target="_blank" class="demoBtn">View site</a>
+			</div>
+		</div>
+		<div>
+			<a href="http://www.primefamilyclinic.com/" target="_blank">
+				<img src="./images/primeFamilyClinic.png">
+			</a>
+			<div>
+				<h3>Prime Family Clinic</h3>
+				<a href="http://www.primefamilyclinic.com/" target="_blank" class="demoBtn">View site</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<h5>Find me on the Web</h5>
+		<div>
+			<a href="https://www.github.com/sbappan" target="_blank">
+				<img src="./images/GitHub-Mark-32px.png" alt="">
+			</a>
+			<a href="https://www.linkedin.com/in/sbappan/" target="_blank">
+				<img src="./images/32px-Linkedin_icon.svg.png" alt="">
+			</a>
+		</div>
+	</footer>
 </body>
+
 </html>
