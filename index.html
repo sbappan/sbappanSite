@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script> -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Santhosh's Portfolio
+	</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
 </head>
+
 <body>
-    <h1>Hi. Santhosh Appan here.</h1>
-    <h2>Welcome to my personal website</h2>
-    <h3>Please visit my <a href="./portfolio.html">Portfolio</a></h3>
-    <br />
-    <br />
-    <h4>The website is currently being rebuilt with Gatsby</h4>
+	<header>
+		<nav>
+			<a href="#">SBA</a>
+		</nav>
+	</header>
+	<section class="intro">
+		<h2>Santhosh B. Appan</h2>
+		<p class="tagLine">Hello! I’m a Front-End Developer based in Ontario, Canada.</p>
+	</section>
+	<section class="portfolio">
+		<div>
+			<a href="https://gatherapp.xyz/" 	target="_blank">
+				<img src="./images/gatherApp.png">
+			</a>
+			<div>
+				<h3>Gather</h3>
+				<a href="https://gatherapp.xyz/" target="_blank" class="demoBtn">View demo</a>
+				<a href="https://github.com/sbappan/gatherFrontEnd" target="_blank" class="repoBtn">Github repo</a>
+			</div>
+		</div>
+		<div>
+			<a href="https://trentonsmilesdental.ca" 	target="_blank">
+				<img src="./images/trentonSmiles.png">
+			</a>
+			<div>
+				<h3>Trenton Smiles Dental</h3>
+				<a href="https://trentonsmilesdental.ca" target="_blank" class="demoBtn">View site</a>
+			</div>
+		</div>
+		<div>
+			<a href="https://scripteam.netlify.app/" target="_blank">
+				<img src="./images/scripteam.png">
+			</a>
+			<div>
+				<h3>Scripteam</h3>
+				<a href="https://scripteam.netlify.app/" target="_blank" class="demoBtn">View site</a>
+			</div>
+		</div>
+		<div>
+			<a href="http://www.primefamilyclinic.com/" target="_blank">
+				<img src="./images/primeFamilyClinic.png">
+			</a>
+			<div>
+				<h3>Prime Family Clinic</h3>
+				<a href="http://www.primefamilyclinic.com/" target="_blank" class="demoBtn">View site</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<h5>Find me on the Web</h5>
+		<div>
+			<a href="https://www.github.com/sbappan" target="_blank">
+				<img src="./images/GitHub-Mark-32px.png" alt="">
+			</a>
+			<a href="https://www.linkedin.com/in/sbappan/" target="_blank">
+				<img src="./images/32px-Linkedin_icon.svg.png" alt="">
+			</a>
+		</div>
+	</footer>
 </body>
-<style>
-    body {
-        text-align: center;
-        color: dodgerblue;
-        background: #2BC0E4;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
 
-    h3 {
-        color: rgba(0, 0, 255, 0.8);
-    }
-
-    h3 a {
-        text-decoration: none;
-    }
-</style>
 </html>
