@@ -1,5 +1,6 @@
 body {
   font-family: 'Merriweather', serif;
+  color: rgba(17, 17, 17, 0.9);
 }
 
 a {
@@ -46,7 +47,7 @@ p.tagLine {
 }
 
 .portfolio {
-  margin: 10vh auto;
+  margin: 10vh auto 4vh auto;
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -73,23 +74,26 @@ p.tagLine {
 }
 
 .portfolio a.demoBtn {
-  border: 1px solid #CE2D4F;
+  border: 1px solid #2CF6B3;
   margin: 1rem 0;
   width: 10rem;
+  text-align: center;
 }
 
 .portfolio a.demoBtn:hover {
-  background-color: #CE2D4F;
-  color: whitesmoke;
+  background-color: #2CF6B3;
+  color: #102542;
 }
 
 .portfolio a.repoBtn {
-  border: 1px solid #2CF6B3;
+  border: 1px solid #CE2D4F;
   width: 10rem;
+  text-align: center;
 }
 
 .portfolio a.repoBtn:hover {
-  background-color: #2CF6B3;
+  background-color: #CE2D4F;
+  color: whitesmoke;
 }
 
 .portfolio > div > div {
@@ -143,6 +147,15 @@ footer div a {
 
   .portfolio {
     width: 90vw;
+    margin-bottom: 2vh;
+  }
+
+  .portfolio a {
+    padding: 1rem;
+  }
+
+  .portfolio img {
+    width: 80vw;
   }
 
   .portfolio > div, .portfolio > div:nth-child(even) {
@@ -152,11 +165,12 @@ footer div a {
     padding: .5rem 0;
   }
 
-  .portfolio img {
-    width: 80vw;
+  .portfolio a.demoBtn, .portfolio a.repoBtn, .portfolio div h3 {
+    align-self: center;
   }
 
-  .portfolio a.demoBtn, .portfolio a.repoBtn {
-    align-self: center;
+  .portfolio a.demoBtn {
+    background-color: #2CF6B3;
+    color: #102542;
   }
 }
