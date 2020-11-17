@@ -102,12 +102,8 @@ p.tagLine {
   justify-content: center;
 }
 
-.portfolio > div > a {
-  width: 40vw;
-}
-
 .portfolio img {
-  width: 100%;
+  width: 45rem;
   height: auto;
   border-radius: .5rem;
 }
@@ -161,10 +157,6 @@ footer div a {
 
   .portfolio a {
     padding: 1rem;
-  }
-
-  .portfolio > div > a {
-    width: 80vw;
   }
 
   .portfolio > div, .portfolio > div:nth-child(even) {
