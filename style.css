@@ -102,8 +102,13 @@ p.tagLine {
   justify-content: center;
 }
 
-.portfolio img {
+.portfolio > div > a {
   width: 40vw;
+}
+
+.portfolio img {
+  width: 100%;
+  height: auto;
   border-radius: .5rem;
 }
 
@@ -158,7 +163,7 @@ footer div a {
     padding: 1rem;
   }
 
-  .portfolio img {
+  .portfolio > div > a {
     width: 80vw;
   }
 
