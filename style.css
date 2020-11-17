@@ -141,6 +141,10 @@ footer div a {
 /* Media queries start here */
 
 @media (max-width:600px) {
+  nav a {
+    padding-left: 8vw;
+  }
+
   .intro {
     margin-top: 8vh;
   }
