@@ -37,9 +37,20 @@ nav a {
   margin: 1rem auto;
 }
 
-.intro img {
+.intro div {
   width: 25rem;
-  margin-top: -4rem;
+  height: 25rem;
+  background: url("./images/bighead.svg") no-repeat;
+  display: inline-block;
+  transition: all 1s;
+  margin-top: -5vh;
+}
+
+/* Source for avatar flip on hover:
+   https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php */
+
+.intro div:hover {
+  background: url("./images/bighead_no_mask.svg") no-repeat;
 }
 
 p.tagLine {
@@ -127,7 +138,7 @@ p.tagLine {
 }
 
 .contact {
-  width: 100vw;
+  width: 100%;
   background-color: rgba(183, 211, 242, 0.4);
   padding: 2rem;
   font-family: 'Lato', sans-serif;
@@ -139,16 +150,16 @@ p.tagLine {
 
 .getInTouch {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .sendMsg {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 label span {
@@ -156,19 +167,30 @@ label span {
 }
 
 .contact textarea {
-  height: 10rem;
-  width: 32rem;
+  height: 15rem;
+  width: 45vw;
 }
 
 .basicInfo {
   display: flex;
   justify-content: space-between;
-  width: 32rem;
+  width: 45vw;
   margin-bottom: 2rem;
 }
 
+.basicInfo > p {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+}
+
+.basicInfo input {
+  padding: .5rem 0;
+  width: 15vw;
+}
+
 .basicInfo input[type=email] {
-  width: 100%;
+  width: 25vw;
 }
 
 .contact button {
@@ -193,7 +215,7 @@ footer {
   justify-content: center;
 }
 
-footer h4 {
+footer p {
   color: #102542;
   font-size: 1.1rem;
   margin-top: 1rem;
@@ -222,6 +244,10 @@ footer div a {
     margin-top: 8vh;
   }
 
+  .intro div {
+    margin-top: -10vh;
+  }
+
   .portfolio {
     width: 90vw;
     margin-bottom: 2vh;
@@ -245,5 +271,33 @@ footer div a {
   .portfolio a.demoBtn {
     background-color: #2CF6B3;
     color: #102542;
+  }
+
+  .contact {
+    padding: 1rem;
+  }
+
+  .getInTouch, .sendMsg, .basicInfo {
+    width: 90%;
+  }
+
+  .basicInfo {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .basicInfo > p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .basicInfo input[type=email], .basicInfo input[type=text] {
+    width: 80vw;
+  }
+
+  .contact textarea {
+    height: 10rem;
+    width: 80vw;
   }
 }

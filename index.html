@@ -22,8 +22,7 @@
 		</nav>
 	</header>
 	<section class="intro">
-		<img src="./images/bighead.svg" alt="">
-		<!-- <img src="./images/bighead_no_mask.svg" alt=""> -->
+		<div class="avatar"></div>
 		<h2>Santhosh B. Appan</h2>
 		<p class="tagLine">Hello! I’m a Front-End Developer based in Ontario, Canada.</p>
 	</section>
@@ -68,40 +67,38 @@
 	</section>
 	<section class="contact">
 		<div class="getInTouch">
-			<h2>Want to get in touch?</h2>
-			<h2>Send a quick message!</h2>
+			<h2>Want to get in touch? Send a quick message!</h2>
 			<p>Available for full-time Front-End Development work.</p>
 		</div>
 		<div class="sendMsg">
 			<div class="formDiv">
 				<form name='contact' method='POST' netlify>
-						<input type='hidden' name='form-name' value='contact' />
-						<p class="hidden">
-								<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-						</p>
-						<div class="basicInfo">
-							<p>
-								<label>NAME</label>
-								<input type="text" name="fullName" required />
-							</p>
-							<p>
-								<label>EMAIL</label>
-								<input type="email" name="email" required />
-							</p>
-						</div>
+					<p class="hidden">
+						<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+					</p>
+					<div class="basicInfo">
 						<p>
-								<label>MESSAGE</label><br>
-								<textarea name="message" cols="50" rows="5"></textarea>
+							<label>NAME</label>
+							<input type="text" name="fullName" required />
 						</p>
 						<p>
-								<button type="submit">SUBMIT</button>
+							<label>EMAIL</label>
+							<input type="email" name="email" required />
 						</p>
+					</div>
+					<p>
+							<label>MESSAGE</label><br>
+							<textarea name="message" cols="50" rows="5"></textarea>
+					</p>
+					<p>
+							<button type="submit">SUBMIT</button>
+					</p>
 				</form>
 			</div>
 		</div>
 	</section>
 	<footer>
-		<h4>Find me on the Web</h4>
+		<p>Find me on the Web</p>
 		<div>
 			<a href="https://www.github.com/sbappan" target="_blank" rel="noreferrer">
 				<img src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605572011/personalSite/GitHub-Mark-32px.png" alt="Github" width="32" height="32">
