@@ -30,6 +30,7 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .intro h2 {
@@ -169,6 +170,8 @@ label span {
 .contact textarea {
   height: 15rem;
   width: 45vw;
+  font-family: 'Merriweather', serif;
+  padding: .5rem 1rem;
 }
 
 .basicInfo {
@@ -181,11 +184,10 @@ label span {
 .basicInfo > p {
   display: flex;
   flex-direction: column;
-  /* margin-bottom: 1rem; */
 }
 
 .basicInfo input {
-  padding: .5rem 0;
+  padding: .5rem 1rem;
   width: 15vw;
 }
 
