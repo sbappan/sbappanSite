@@ -248,6 +248,7 @@ footer div a {
 
   .intro div {
     margin-top: -10vh;
+    width: 100vw;
   }
 
   .portfolio {
