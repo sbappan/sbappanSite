@@ -12,10 +12,11 @@
 	</title>
 	<!-- Critical css; generated using https://www.sitelocity.com/critical-path-css-generator -->
 	<style>
-		/* @font-face {
+		@font-face {
 			font-family: 'Cinzel Decorative';
 			font-style: normal;
 			font-weight: 400;
+			font-display: swap;
 			src: url(https://fonts.gstatic.com/s/cinzeldecorative/v9/daaCSScvJGqLYhG8nNt8KPPswUAPnh7U.ttf) format('truetype')
 		}
 
@@ -23,6 +24,7 @@
 			font-family: 'Cinzel Decorative';
 			font-style: normal;
 			font-weight: 700;
+			font-display: swap;
 			src: url(https://fonts.gstatic.com/s/cinzeldecorative/v9/daaHSScvJGqLYhG8nNt8KPPswUAPniZoaelD.ttf) format('truetype')
 		}
 
@@ -30,7 +32,64 @@
 			font-family: 'Cinzel Decorative';
 			font-style: normal;
 			font-weight: 900;
+			font-display: swap;
 			src: url(https://fonts.gstatic.com/s/cinzeldecorative/v9/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa-lD.ttf) format('truetype')
+		}
+
+		@font-face {
+			font-family: 'Lato';
+			font-style: italic;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI9w2PHA.ttf) format('truetype')
+		}
+
+		@font-face {
+			font-family: 'Lato';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USew8.ttf) format('truetype')
+		}
+
+		@font-face {
+			font-family: 'Lato';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHvxk.ttf) format('truetype')
+		}
+
+		@font-face {
+			font-family: 'Lato';
+			font-style: normal;
+			font-weight: 700;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVew8.ttf) format('truetype')
+		}
+
+		@font-face {
+			font-family: 'Merriweather';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRpXw.ttf) format('truetype')
+		}
+
+		@font-face {
+			font-family: 'Merriweather';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5Oew.ttf) format('truetype')
+		}
+
+		@font-face {
+			font-family: 'Merriweather';
+			font-style: normal;
+			font-weight: 700;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNpXw.ttf) format('truetype')
 		}
 
 		*,
@@ -65,7 +124,9 @@
 			display: block
 		}
 
-		input {
+		input,
+		button,
+		textarea {
 			font: inherit
 		}
 
@@ -96,14 +157,27 @@
 		}
 
 		header {
-			height: 10vh
+			height: 15vh;
+			position: sticky;
+			top: 0;
+			background-color: #fff;
+			display: flex;
+			color: #102542;
+			z-index: 1;
+			box-shadow: 0 0 10px rgba(0, 0, 0, .2)
 		}
 
-		nav a.logo {
+		header a.logo {
 			font-family: 'Cinzel Decorative', cursive;
-			font-size: 4rem;
-			padding: 2rem;
-			color: #102542
+			font-size: 4rem
+		}
+
+		nav {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center
 		}
 
 		.intro {
@@ -192,19 +266,93 @@
 			color: #102542
 		}
 
+		.contact {
+			width: 100%;
+			background-color: rgba(183, 211, 242, .4);
+			padding: 2rem;
+			font-family: 'Lato', sans-serif
+		}
+
 		.contact input {
 			font-family: 'Merriweather', serif
+		}
+
+		.getInTouch {
+			width: 80%;
+			margin: 2rem auto
+		}
+
+		.sendMsg {
+			width: 80%;
+			margin: 2rem auto
 		}
 
 		.hidden {
 			display: none
 		}
 
-		@media (max-width:600px) {
-			nav a {
-				padding-left: 8vw
-			}
+		.contact textarea {
+			height: 15rem;
+			width: 45vw;
+			font-family: 'Merriweather', serif;
+			padding: .5rem 1rem
+		}
 
+		.basicInfo {
+			display: flex;
+			justify-content: space-between;
+			width: 45vw;
+			margin-bottom: 2rem
+		}
+
+		.basicInfo>p {
+			display: flex;
+			flex-direction: column
+		}
+
+		.basicInfo input {
+			padding: .5rem 1rem;
+			width: 15vw
+		}
+
+		.basicInfo input[type=email] {
+			width: 25vw
+		}
+
+		.contact button {
+			background-color: #102542;
+			color: whitesmoke;
+			border: none;
+			padding: 1rem 2rem;
+			margin-top: 1rem
+		}
+
+		footer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center
+		}
+
+		footer p {
+			color: #102542;
+			font-size: 1.1rem;
+			margin-top: 1rem;
+			margin-bottom: .5rem;
+			text-align: center
+		}
+
+		footer div {
+			display: flex;
+			align-items: center;
+			justify-content: space-around
+		}
+
+		footer div a {
+			margin: 0 1rem 1rem 1rem
+		}
+
+		@media (max-width:600px) {
 			.intro {
 				margin-top: 8vh
 			}
@@ -241,7 +389,38 @@
 				background-color: #2CF6B3;
 				color: #102542
 			}
-		} */
+
+			.contact {
+				padding: 1rem
+			}
+
+			.getInTouch,
+			.sendMsg,
+			.basicInfo {
+				width: 90%
+			}
+
+			.basicInfo {
+				flex-direction: column;
+				margin-bottom: 0
+			}
+
+			.basicInfo>p {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 1rem
+			}
+
+			.basicInfo input[type=email],
+			.basicInfo input[type=text] {
+				width: 80vw
+			}
+
+			.contact textarea {
+				height: 10rem;
+				width: 80vw
+			}
+		}
 	</style>
 </head>
 
