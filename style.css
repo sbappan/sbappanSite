@@ -8,7 +8,10 @@ a {
   color: unset;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Lato', sans-serif;
 }
 
@@ -38,19 +41,20 @@ nav a {
   margin: 1rem auto;
 }
 
-.intro div {
+.avatar {
   width: 25rem;
   height: 25rem;
   background: url("./images/bighead.svg") no-repeat;
   display: inline-block;
   transition: all 1s;
   margin-top: -5vh;
+  filter: drop-shadow(2px 4px 8px #585858);
 }
 
 /* Source for avatar flip on hover:
    https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php */
 
-.intro div:hover {
+.avatar:hover {
   background: url("./images/bighead_no_mask.svg") no-repeat;
 }
 
@@ -70,7 +74,7 @@ p.tagLine {
   flex-direction: column;
 }
 
-.portfolio > div {
+.portfolio>div {
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;
@@ -80,7 +84,7 @@ p.tagLine {
   background-color: rgba(183, 211, 242, 0.4);
 }
 
-.portfolio > div:nth-child(even) {
+.portfolio>div:nth-child(even) {
   flex-direction: row-reverse;
   background-color: rgba(44, 246, 179, 0.2);
 }
@@ -120,7 +124,7 @@ p.tagLine {
   transform: scale(1.1);
 }
 
-.portfolio > div > div {
+.portfolio>div>div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,7 +171,7 @@ p.tagLine {
 }
 
 label span {
-  color:#767676ca
+  color: #767676ca
 }
 
 .contact textarea {
@@ -184,7 +188,7 @@ label span {
   margin-bottom: 2rem;
 }
 
-.basicInfo > p {
+.basicInfo>p {
   display: flex;
   flex-direction: column;
 }
@@ -233,7 +237,7 @@ footer div {
   align-items: center;
   justify-content: space-around;
 }
-        
+
 footer div a {
   margin: 0 1rem 1rem 1rem;
 }
@@ -249,7 +253,7 @@ footer div a {
     margin-top: 8vh;
   }
 
-  .intro div {
+  .avatar {
     margin-top: -10vh;
     width: 100vw;
   }
@@ -263,14 +267,17 @@ footer div a {
     padding: 1rem;
   }
 
-  .portfolio > div, .portfolio > div:nth-child(even) {
+  .portfolio>div,
+  .portfolio>div:nth-child(even) {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: .5rem 0;
   }
 
-  .portfolio a.demoBtn, .portfolio a.repoBtn, .portfolio div h3 {
+  .portfolio a.demoBtn,
+  .portfolio a.repoBtn,
+  .portfolio div h3 {
     align-self: center;
   }
 
@@ -283,7 +290,9 @@ footer div a {
     padding: 1rem;
   }
 
-  .getInTouch, .sendMsg, .basicInfo {
+  .getInTouch,
+  .sendMsg,
+  .basicInfo {
     width: 90%;
   }
 
@@ -292,13 +301,14 @@ footer div a {
     margin-bottom: 0;
   }
 
-  .basicInfo > p {
+  .basicInfo>p {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
   }
-  
-  .basicInfo input[type=email], .basicInfo input[type=text] {
+
+  .basicInfo input[type=email],
+  .basicInfo input[type=text] {
     width: 80vw;
   }
 
