@@ -54,7 +54,7 @@ nav a {
 /* Source for avatar flip on hover:
    https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php */
 
-.avatar:hover {
+div.avatar:hover {
   background: url("./images/bighead_no_mask.svg") no-repeat;
 }
 
