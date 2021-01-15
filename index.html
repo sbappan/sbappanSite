@@ -11,7 +11,7 @@
 		Santhosh's Portfolio
 	</title>
 	<!-- Critical css; generated using https://www.sitelocity.com/critical-path-css-generator -->
-	<style>
+	<!-- <style>
 		@font-face {
 			font-family: 'Cinzel Decorative';
 			font-style: normal;
@@ -190,9 +190,9 @@
 			margin: 0 auto
 		}
 
-		.intro h2 {
-			font-size: 1.6rem;
-			margin: 1rem auto
+		.myName {
+			font-size: 2rem;
+			margin: 1rem auto;
 		}
 
 		.avatar {
@@ -420,23 +420,25 @@
 				width: 80vw
 			}
 		}
-	</style>
+	</style> -->
 </head>
 
 <body>
 	<header>
+		<a class="logo" href="#">SBA</a>
 		<nav>
-			<a class="logo" href="#">SBA</a>
-			<a href="https://blog.sbappan.com/" target="_blank" rel="noreferrer">Blog</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact me</a>
+			<!-- <a href="https://blog.sbappan.com/" target="_blank" rel="noreferrer">Blog</a> -->
 		</nav>
 	</header>
 	<section class="intro">
 		<div class="avatar"></div>
-		<h2>Santhosh B. Appan</h2>
-		<p class="tagLine">Hello! I’m a Front-End Developer based in Ontario, Canada.</p>
+		<h2 class="myName">Santhosh B. Appan</h2>
+		<p class="tagLine">Hello! I’m a Frontend Developer based in Ontario, Canada.</p>
 	</section>
-	<section class="portfolio">
-		<div>
+	<section id="portfolio" class="portfolio">
+		<div class="transition1">
 			<a href="https://gatherapp.xyz/" target="_blank" rel="noreferrer">
 				<img
 					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629011/personalSite/gatherApp.png"
@@ -449,7 +451,7 @@
 					repo</a>
 			</div>
 		</div>
-		<div>
+		<div class="transition2">
 			<a href="https://trentonsmilesdental.ca" target="_blank" rel="noreferrer">
 				<img
 					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/trentonSmiles.png"
@@ -460,7 +462,7 @@
 				<a href="https://trentonsmilesdental.ca" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
 			</div>
 		</div>
-		<div>
+		<div class="transition3">
 			<a href="https://scripteam.netlify.app/" target="_blank" rel="noreferrer">
 				<img
 					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/scripteam.png"
@@ -471,7 +473,7 @@
 				<a href="https://scripteam.netlify.app/" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
 			</div>
 		</div>
-		<div>
+		<div class="transition4">
 			<a href="http://www.primefamilyclinic.com/" target="_blank" rel="noreferrer">
 				<img
 					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/primeFamilyClinic.png"
@@ -483,10 +485,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact">
+	<section id="contact" class="contact transition5">
 		<div class="getInTouch">
 			<h2>Want to get in touch? Send a quick message!</h2>
-			<p>Available for full-time Front-End Development work.</p>
+			<p>Available for full-time Frontend Development work.</p>
 		</div>
 		<div class="sendMsg">
 			<div class="formDiv">
@@ -539,6 +541,13 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
 	<link rel="stylesheet" href="./style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+		integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+		integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
+		crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
 </body>
 
 </html>
