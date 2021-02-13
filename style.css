@@ -575,6 +575,11 @@ article>section p {
     font-size: 1.953rem;
   }
 
+  article>section p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
   /* Blog posts end*/
 }
 
