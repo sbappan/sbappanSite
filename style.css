@@ -396,7 +396,7 @@ article>section {
 }
 
 article>section a {
-  color: #1da1f2;
+  color: hsl(203deg 89% 33%);
 }
 
 /* Blog posts styles end */
