@@ -10,6 +10,333 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
   <link rel="manifest" href="../site.webmanifest">
+  <!-- Critical css; generated using https://www.sitelocity.com/critical-path-css-generator -->
+  <style>
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI9w2PHA.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USew8.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHvxk.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVew8.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRpXw.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5Oew.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNpXw.ttf) format('truetype')
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    body,
+    h1,
+    h2,
+    h4,
+    p {
+      margin: 0
+    }
+
+    body {
+      min-height: 100vh;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5
+    }
+
+    a:not([class]) {
+      text-decoration-skip-ink: auto
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important
+      }
+    }
+
+    html {
+      font-size: 100%
+    }
+
+    html body {
+      font-weight: 400;
+      line-height: 1.75
+    }
+
+    body p {
+      margin-bottom: 1rem
+    }
+
+    h1,
+    h2,
+    h4 {
+      margin: 3rem 0 1.38rem;
+      font-weight: 400;
+      line-height: 1.3
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 3.052rem
+    }
+
+    h2 {
+      font-size: 2.441rem
+    }
+
+    h4 {
+      font-size: 1.563rem
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'Merriweather', serif;
+      color: rgba(17, 17, 17, .9)
+    }
+
+    a {
+      text-decoration: none;
+      color: unset
+    }
+
+    h1,
+    h2,
+    h4 {
+      font-family: 'Lato', sans-serif
+    }
+
+    body>header {
+      height: 10vh;
+      padding: 0 10vw;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      color: #102542;
+      z-index: 1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+    }
+
+    body>header a.logo {
+      display: flex
+    }
+
+    nav {
+      width: 20vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    }
+
+    footer p {
+      color: #102542;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+      text-align: center
+    }
+
+    footer div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around
+    }
+
+    footer div a {
+      margin: 0 1rem 1rem 1rem
+    }
+
+    nav a.currentSection {
+      font-size: 1.25rem;
+      font-weight: 700
+    }
+
+    .blogIntro {
+      width: 80%;
+      margin: 10vh auto;
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center
+    }
+
+    .mobileOnly {
+      display: none
+    }
+
+    .blogList {
+      padding: 5vh 20vw;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(183, 211, 242, .4)
+    }
+
+    .blogList>h2 {
+      margin-top: 0
+    }
+
+    .blogList>div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 1.5rem 0;
+      padding: 2rem;
+      box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+      border-radius: 1rem
+    }
+
+    .blogList>div:nth-child(even) {
+      flex-direction: row-reverse
+    }
+
+    .blogList>div img {
+      width: 25vw
+    }
+
+    .blogList>div>a {
+      margin: 0 1.5rem
+    }
+
+    .blogList>div:nth-child(even)>a {
+      margin-left: 0
+    }
+
+    @media (min-width:900px) and (max-width:1600px) {
+      body>header {
+        height: 12vh
+      }
+
+      .blogList {
+        padding: 10vh 15vw
+      }
+    }
+
+    @media (max-width:850px) {
+      nav {
+        width: 33vw
+      }
+
+      .blogIntro {
+        align-items: flex-start
+      }
+
+      .blogList>div,
+      .blogList>div:nth-child(even) {
+        flex-direction: column
+      }
+
+      .blogList>div img {
+        width: 100%
+      }
+    }
+
+    @media (max-width:500px) {
+      body>header {
+        height: 15vh;
+        padding: 0 5vw
+      }
+
+      nav {
+        width: 55vw;
+        justify-content: space-evenly
+      }
+
+      .blogIntro {
+        width: 85%;
+        height: 50vh;
+        align-items: flex-start
+      }
+
+      .mobileOnly {
+        display: unset
+      }
+
+      .blogList {
+        padding: 5vh 10vw
+      }
+
+      .blogList>div,
+      .blogList>div:nth-child(even) {
+        flex-direction: column
+      }
+
+      .blogList>div img {
+        width: 100%
+      }
+    }
+
+    @media (max-width:400px) {
+      .blogIntro {
+        width: 92%
+      }
+    }
+  </style>
 </head>
 
 <body>
