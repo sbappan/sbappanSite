@@ -8,34 +8,14 @@
 	<meta name="description"
 		content="Santhosh's portfolio website to showcase the personal and freelance projects that he has completed.">
 	<title>
-		Santhosh's Portfolio
+		Santhosh B. Appan's Portfolio site | Home page | Contact | Frontend Developer | Web Developer
 	</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
 	<!-- Critical css; generated using https://www.sitelocity.com/critical-path-css-generator -->
 	<style>
-		@font-face {
-			font-family: 'Cinzel Decorative';
-			font-style: normal;
-			font-weight: 400;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/cinzeldecorative/v9/daaCSScvJGqLYhG8nNt8KPPswUAPnh7U.ttf) format('truetype')
-		}
-
-		@font-face {
-			font-family: 'Cinzel Decorative';
-			font-style: normal;
-			font-weight: 700;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/cinzeldecorative/v9/daaHSScvJGqLYhG8nNt8KPPswUAPniZoaelD.ttf) format('truetype')
-		}
-
-		@font-face {
-			font-family: 'Cinzel Decorative';
-			font-style: normal;
-			font-weight: 900;
-			font-display: swap;
-			src: url(https://fonts.gstatic.com/s/cinzeldecorative/v9/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa-lD.ttf) format('truetype')
-		}
-
 		@font-face {
 			font-family: 'Lato';
 			font-style: italic;
@@ -99,14 +79,11 @@
 		}
 
 		body,
+		h1,
 		h2,
 		h3,
 		p {
 			margin: 0
-		}
-
-		html {
-			scroll-behavior: smooth
 		}
 
 		body {
@@ -141,6 +118,44 @@
 			}
 		}
 
+		html {
+			font-size: 100%
+		}
+
+		html body {
+			font-weight: 400;
+			line-height: 1.75
+		}
+
+		body p {
+			margin-bottom: 1rem
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin: 3rem 0 1.38rem;
+			font-weight: 400;
+			line-height: 1.3
+		}
+
+		h1 {
+			margin-top: 0;
+			font-size: 3.052rem
+		}
+
+		h2 {
+			font-size: 2.441rem
+		}
+
+		h3 {
+			font-size: 1.953rem
+		}
+
+		html {
+			scroll-behavior: smooth
+		}
+
 		body {
 			font-family: 'Merriweather', serif;
 			color: rgba(17, 17, 17, .9)
@@ -151,61 +166,80 @@
 			color: unset
 		}
 
+		h1,
 		h2,
 		h3 {
 			font-family: 'Lato', sans-serif
 		}
 
-		header {
+		body>header {
 			height: 10vh;
-			padding-left: 10vw;
+			padding: 0 10vw;
 			position: sticky;
 			top: 0;
 			background-color: #fff;
 			display: flex;
+			justify-content: space-between;
 			color: #102542;
 			z-index: 1;
 			box-shadow: 0 0 10px rgba(0, 0, 0, .2)
 		}
 
-		header a.logo {
-			font-family: 'Cinzel Decorative', cursive;
-			font-size: 4rem
+		body>header a.logo {
+			display: flex
 		}
 
 		nav {
-			width: 25vw;
+			width: 20vw;
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-between;
 			align-items: center
+		}
+
+		footer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center
+		}
+
+		footer p {
+			color: #102542;
+			font-size: 1.1rem;
+			margin-top: 1rem;
+			margin-bottom: .5rem;
+			text-align: center
+		}
+
+		footer div {
+			display: flex;
+			align-items: center;
+			justify-content: space-around
+		}
+
+		footer div a {
+			margin: 0 1rem 1rem 1rem
 		}
 
 		.intro {
 			min-height: 12vh;
-			width: 80vw;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			align-items: center;
-			margin: 5vh auto
-		}
-
-		.myName {
-			font-size: 2rem;
-			margin: 1rem auto
+			padding: 5vh 10vw
 		}
 
 		.avatar {
 			width: 25rem;
 			height: 25rem;
-			background: url(../css/images/bighead.svg) no-repeat;
+			background: url(./images/bighead.svg) no-repeat;
 			display: inline-block;
 			margin-top: -5vh;
 			filter: drop-shadow(2px 4px 8px #585858)
 		}
 
-		p.tagLine {
-			font-size: 3rem;
+		h1.tagLine {
 			color: #102542
 		}
 
@@ -261,16 +295,10 @@
 			border-radius: .5rem
 		}
 
-		.portfolio h3 {
-			font-size: 1.5rem;
-			color: #102542
-		}
-
 		.contact {
 			width: 100%;
 			background-color: rgba(183, 211, 242, .4);
-			padding: 2rem;
-			font-family: 'Lato', sans-serif
+			padding: 2rem
 		}
 
 		.contact input {
@@ -327,42 +355,35 @@
 			margin-top: 1rem
 		}
 
-		footer {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center
-		}
-
-		footer p {
-			color: #102542;
-			font-size: 1.1rem;
-			margin-top: 1rem;
-			margin-bottom: .5rem;
-			text-align: center
-		}
-
-		footer div {
-			display: flex;
-			align-items: center;
-			justify-content: space-around
-		}
-
-		footer div a {
-			margin: 0 1rem 1rem 1rem
-		}
-
-		@media (max-width:600px) {
-			header {
-				height: 15vh
+		@media (min-width:900px) and (max-width:1600px) {
+			body>header {
+				height: 12vh
 			}
+		}
 
+		@media (max-width:850px) {
 			nav {
-				width: 60vw
+				width: 33vw
 			}
 
 			.intro {
-				margin-top: 8vh
+				padding: 8vh 5vw 5vh
+			}
+		}
+
+		@media (max-width:500px) {
+			body>header {
+				height: 15vh;
+				padding: 0 5vw
+			}
+
+			nav {
+				width: 55vw;
+				justify-content: space-evenly
+			}
+
+			.intro {
+				padding: 8vh 5vw 5vh
 			}
 
 			.avatar {
@@ -434,98 +455,107 @@
 
 <body>
 	<header>
-		<a class="logo" href="#">SBA</a>
+		<a class="logo" href="#">
+			<img src="./images/SBA_logo.svg" alt="logo" height="100" width="137">
+		</a>
 		<nav>
 			<a href="#portfolio">Portfolio</a>
-			<a href="#contact">Contact me</a>
-			<!-- <a href="https://blog.sbappan.com/" target="_blank" rel="noreferrer">Blog</a> -->
+			<a href="#contact">Contact</a>
+			<a href="./blog/index.html">Blog</a>
 		</nav>
 	</header>
-	<section class="intro">
-		<div class="avatar"></div>
-		<h2 class="myName">Santhosh B. Appan</h2>
-		<p class="tagLine">Hello! I’m a Frontend Developer based in Ontario, Canada.</p>
-	</section>
-	<section id="portfolio" class="portfolio">
-		<div class="transition1">
-			<a href="https://gatherapp.xyz/" target="_blank" rel="noreferrer">
-				<img
-					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629011/personalSite/gatherApp.png"
-					alt="Gather app" width="720" height="350">
-			</a>
-			<div>
-				<h3>Gather</h3>
-				<a href="https://gatherapp.xyz/" target="_blank" class="demoBtn" rel="noreferrer">View demo</a>
-				<a href="https://github.com/sbappan/gatherFrontEnd" target="_blank" class="repoBtn" rel="noreferrer">Github
-					repo</a>
+	<main>
+		<section class="intro">
+			<div class="avatar"></div>
+			<h2 class="myName">Santhosh B. Appan</h2>
+			<h1 class="tagLine">Hello! I’m a Web Developer based in Ontario, Canada.</h1>
+		</section>
+		<section id="portfolio" class="portfolio">
+			<h2>Portfolio</h2>
+			<div class="transition1">
+				<a href="https://gatherapp.xyz/" target="_blank" rel="noreferrer">
+					<img
+						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629011/personalSite/gatherApp.png"
+						alt="Gather app" width="720" height="350">
+				</a>
+				<div>
+					<h3>Gather</h3>
+					<a href="https://gatherapp.xyz/" target="_blank" class="demoBtn" rel="noreferrer">View demo</a>
+					<a href="https://github.com/sbappan/gatherFrontEnd" target="_blank" class="repoBtn" rel="noreferrer">Github
+						repo</a>
+				</div>
 			</div>
-		</div>
-		<div class="transition2">
-			<a href="https://trentonsmilesdental.ca" target="_blank" rel="noreferrer">
-				<img
-					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/trentonSmiles.png"
-					alt="Trenton Smiles Dental" width="720" height="350">
-			</a>
-			<div>
-				<h3>Trenton Smiles Dental</h3>
-				<a href="https://trentonsmilesdental.ca" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
+			<div class="transition2">
+				<a href="https://trentonsmilesdental.ca" target="_blank" rel="noreferrer">
+					<img
+						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/trentonSmiles.png"
+						alt="Trenton Smiles Dental" width="720" height="350">
+				</a>
+				<div>
+					<h3>Trenton Smiles Dental</h3>
+					<a href="https://trentonsmilesdental.ca" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
+				</div>
 			</div>
-		</div>
-		<div class="transition3">
-			<a href="https://scripteam.netlify.app/" target="_blank" rel="noreferrer">
-				<img
-					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/scripteam.png"
-					alt="Scripteam" width="720" height="350">
-			</a>
-			<div>
-				<h3>Scripteam</h3>
-				<a href="https://scripteam.netlify.app/" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
+			<div class="transition3">
+				<a href="https://scripteam.netlify.app/" target="_blank" rel="noreferrer">
+					<img
+						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/scripteam.png"
+						alt="Scripteam" width="720" height="350">
+				</a>
+				<div>
+					<h3>Scripteam</h3>
+					<a href="https://scripteam.netlify.app/" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
+				</div>
 			</div>
-		</div>
-		<div class="transition4">
-			<a href="http://www.primefamilyclinic.com/" target="_blank" rel="noreferrer">
-				<img
-					src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/primeFamilyClinic.png"
-					alt="Prime Family Clinic" width="720" height="350">
-			</a>
-			<div>
-				<h3>Prime Family Clinic</h3>
-				<a href="http://www.primefamilyclinic.com/" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
+			<div class="transition4">
+				<a href="http://www.primefamilyclinic.com/" target="_blank" rel="noreferrer">
+					<img
+						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_auto/v1605629012/personalSite/primeFamilyClinic.png"
+						alt="Prime Family Clinic" width="720" height="350">
+				</a>
+				<div>
+					<h3>Prime Family Clinic</h3>
+					<a href="http://www.primefamilyclinic.com/" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
+				</div>
 			</div>
-		</div>
-	</section>
-	<section id="contact" class="contact transition5">
-		<div class="getInTouch">
-			<h2>Want to get in touch? Send a quick message!</h2>
-			<p>Available for full-time Frontend Development work.</p>
-		</div>
-		<div class="sendMsg">
-			<div class="formDiv">
-				<form name='contact' method='POST' netlify>
-					<p class="hidden">
-						<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-					</p>
-					<div class="basicInfo">
+		</section>
+		<!-- <section>
+			Add details about the 2 FreeCodeCamp certifications
+		</section> -->
+		<section id="contact" class="contact transition5">
+			<div class="getInTouch">
+				<h2>Want to get in touch? Send a quick message!</h2>
+				<p>Looking for full-time Frontend development and Web development positions. Also open to freelance web
+					development work.</p>
+			</div>
+			<div class="sendMsg">
+				<div class="formDiv">
+					<form name='contact' method='POST' netlify>
+						<p class="hidden">
+							<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+						</p>
+						<div class="basicInfo">
+							<p>
+								<label for="fullName">NAME</label>
+								<input type="text" name="fullName" id="fullName" placeholder="Enter your name" required />
+							</p>
+							<p>
+								<label for="email">EMAIL</label>
+								<input type="email" name="email" id="email" placeholder="Enter your email" required />
+							</p>
+						</div>
 						<p>
-							<label for="fullName">NAME</label>
-							<input type="text" name="fullName" id="fullName" placeholder="Enter your name" required />
+							<label for="message">MESSAGE</label><br>
+							<textarea name="message" id="message" cols="50" rows="5" placeholder="Enter your message"></textarea>
 						</p>
 						<p>
-							<label for="email">EMAIL</label>
-							<input type="email" name="email" id="email" placeholder="Enter your email" required />
+							<button type="submit">SUBMIT</button>
 						</p>
-					</div>
-					<p>
-						<label for="message">MESSAGE</label><br>
-						<textarea name="message" id="message" cols="50" rows="5" placeholder="Enter your message"></textarea>
-					</p>
-					<p>
-						<button type="submit">SUBMIT</button>
-					</p>
-				</form>
+					</form>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</main>
 	<footer>
 		<p>Find me on the Web</p>
 		<div>
@@ -546,7 +576,7 @@
 	</footer>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
-		href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;400;700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;400;700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
 	<link rel="stylesheet" href="./style.css">

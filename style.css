@@ -1,3 +1,59 @@
+/* 
+  Source: https://type-scale.com/ 
+  Base size: 16px (100%)
+  Scale: 1.250 - Major Third
+*/
+
+html {
+  font-size: 100%;
+}
+
+html body {
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+body p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+/* Own styles */
+/* Common styles start */
+html {
+  scroll-behavior: smooth
+}
+
 body {
   font-family: 'Merriweather', serif;
   color: rgba(17, 17, 17, 0.9);
@@ -8,6 +64,7 @@ a {
   color: unset;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -15,46 +72,66 @@ h5 {
   font-family: 'Lato', sans-serif;
 }
 
-header {
+body>header {
   height: 10vh;
-  padding-left: 10vw;
+  padding: 0 10vw;
   position: sticky;
   top: 0;
   background-color: #fff;
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
   color: #102542;
   z-index: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-header a.logo {
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 4rem;
-  /* margin-left: 4rem; */
+body>header a.logo {
+  display: flex;
 }
 
 nav {
-  width: 25vw;
-  /* margin: 0 auto; */
+  width: 20vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #102542;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer div a {
+  margin: 0 1rem 1rem 1rem;
+}
+
+/* Common styles end */
+/* Home page styles start */
+
 .intro {
   min-height: 12vh;
-  width: 80vw;
+  /* width: 80vw; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 5vh auto;
-}
-
-.myName {
-  font-size: 2rem;
-  margin: 1rem auto;
+  padding: 5vh 10vw;
 }
 
 .avatar {
@@ -74,13 +151,8 @@ div.avatar:hover {
   background: url("./images/bighead_no_mask.svg") no-repeat;
 }
 
-p.tagLine {
-  font-size: 3rem;
+h1.tagLine {
   color: #102542;
-}
-
-.position {
-  color: rgb(63, 63, 63);
 }
 
 .portfolio {
@@ -156,16 +228,10 @@ p.tagLine {
   filter: brightness(.8) contrast(1.2);
 }
 
-.portfolio h3 {
-  font-size: 1.5rem;
-  color: #102542;
-}
-
 .contact {
   width: 100%;
   background-color: rgba(183, 211, 242, 0.4);
   padding: 2rem;
-  font-family: 'Lato', sans-serif;
 }
 
 .contact input {
@@ -233,44 +299,172 @@ label span {
   cursor: pointer;
 }
 
-footer {
+/* Home page styles end */
+/* Blog home page styles start */
+nav a.currentSection {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.blogIntro {
+  width: 80%;
+  margin: 10vh auto;
+  height: 20vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
 }
 
-footer p {
-  color: #102542;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  margin-bottom: .5rem;
-  text-align: center;
+.mobileOnly {
+  display: none;
 }
 
-footer div {
+.blogList {
+  padding: 5vh 20vw;
   display: flex;
+  flex-direction: column;
+  background-color: rgba(183, 211, 242, 0.4);
+}
+
+.blogList>h2 {
+  margin-top: 0;
+}
+
+.blogList>div {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-around;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
 }
 
-footer div a {
-  margin: 0 1rem 1rem 1rem;
+.blogList>div:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-/* Media queries start here */
+.blogList>div img {
+  width: 25vw;
+}
 
-@media (max-width:600px) {
-  header {
-    height: 15vh;
+.blogList>div>a {
+  margin: 0 1.5rem;
+}
+
+.blogList>div:nth-child(even)>a {
+  margin-left: 0;
+}
+
+.blogList a:hover {
+  color: hsla(212, 69%, 43%, 0.9);
+  ;
+  text-decoration: underline;
+}
+
+.blogList a:nth-child(1):hover {
+  transform: scale(1.05);
+  transition: all .2s;
+}
+
+/* Blog home page styles end */
+/* Blog posts styles start */
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 70vh;
+  padding: 5rem 30vw;
+  background-color: rgba(183, 211, 242, 0.4);
+}
+
+article header {
+  width: 70ch;
+  color: #102542;
+}
+
+article header time {
+  color: rgba(17, 17, 17, 0.9);
+}
+
+article>section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70ch;
+}
+
+article>section a {
+  color: #1da1f2;
+}
+
+/* Blog posts styles end */
+
+/* Media queries start */
+/* Lower resolution computer & laptop monitors */
+@media (min-width:900px) and (max-width:1600px) {
+  body>header {
+    height: 12vh;
   }
 
+  .blogList {
+    padding: 10vh 15vw;
+  }
+
+  article {
+    min-height: 70vh;
+    padding: 3rem 25vw;
+  }
+}
+
+/* iPad and iPad Pro */
+@media (max-width:850px) {
   nav {
-    width: 60vw;
+    width: 33vw;
   }
 
   .intro {
-    margin-top: 8vh;
+    padding: 8vh 5vw 5vh;
+  }
+
+  .blogIntro {
+    align-items: flex-start;
+  }
+
+  .blogList>div,
+  .blogList>div:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .blogList>div img {
+    width: 100%;
+  }
+
+  article {
+    padding: 2rem 20vw;
+  }
+
+  article header,
+  article section {
+    width: 60vw;
+  }
+}
+
+/* Mobile */
+@media (max-width:500px) {
+  body>header {
+    height: 15vh;
+    padding: 0 5vw;
+  }
+
+  nav {
+    width: 55vw;
+    justify-content: space-evenly;
+  }
+
+  .intro {
+    padding: 8vh 5vw 5vh;
   }
 
   .avatar {
@@ -335,5 +529,52 @@ footer div a {
   .contact textarea {
     height: 10rem;
     width: 80vw;
+  }
+
+  /* Blog home start*/
+  .blogIntro {
+    width: 85%;
+    height: 50vh;
+    align-items: flex-start;
+  }
+
+  .mobileOnly {
+    display: unset;
+  }
+
+  .blogList {
+    padding: 5vh 10vw;
+  }
+
+  .blogList>div,
+  .blogList>div:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .blogList>div img {
+    width: 100%;
+  }
+
+  /* Blog home end*/
+  /* Blog posts start*/
+  article {
+    padding: 2rem 10vw;
+  }
+
+  article header,
+  article section {
+    width: 80vw;
+  }
+
+  article header h1 {
+    font-size: 1.953rem;
+  }
+
+  /* Blog posts end*/
+}
+
+@media (max-width:400px) {
+  .blogIntro {
+    width: 92%;
   }
 }
