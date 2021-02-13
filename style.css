@@ -399,6 +399,11 @@ article>section a {
   color: hsl(203deg 89% 33%);
 }
 
+article>section p {
+  font-size: 1.25rem;
+  line-height: 2;
+}
+
 /* Blog posts styles end */
 
 /* Media queries start */
