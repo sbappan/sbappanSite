@@ -1,4 +1,5 @@
 // Inspired by: https://www.youtube.com/watch?v=n59u0nIVtp8
+// ANIMATION Section Missing from the Original Tutorial by DesignCourse
 
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
