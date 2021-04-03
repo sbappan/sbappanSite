@@ -228,6 +228,10 @@ h1.tagLine {
   filter: brightness(.8) contrast(1.2);
 }
 
+.portfolio h3+h5 {
+  margin-top: 0;
+}
+
 .contact {
   width: 100%;
   background-color: rgba(183, 211, 242, 0.4);
