@@ -414,7 +414,7 @@ article>section p {
 /* Lower resolution computer & laptop monitors */
 @media (min-width:900px) and (max-width:1600px) {
   body>header {
-    height: 12vh;
+    height: 14vh;
   }
 
   .blogList {
