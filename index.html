@@ -102,9 +102,7 @@
 			display: block
 		}
 
-		input,
-		button,
-		textarea {
+		input {
 			font: inherit
 		}
 
@@ -134,7 +132,8 @@
 
 		h1,
 		h2,
-		h3 {
+		h3,
+		h5 {
 			margin: 3rem 0 1.38rem;
 			font-weight: 400;
 			line-height: 1.3
@@ -153,12 +152,16 @@
 			font-size: 1.953rem
 		}
 
+		h5 {
+			font-size: 1.25rem
+		}
+
 		html {
 			scroll-behavior: smooth
 		}
 
 		body {
-			font-family: 'Merriweather', serif;
+			font-family: Merriweather, serif;
 			color: rgba(17, 17, 17, .9)
 		}
 
@@ -170,7 +173,7 @@
 		h1,
 		h2,
 		h3 {
-			font-family: 'Lato', sans-serif
+			font-family: Lato, sans-serif
 		}
 
 		body>header {
@@ -197,31 +200,6 @@
 			align-items: center
 		}
 
-		footer {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center
-		}
-
-		footer p {
-			color: #102542;
-			font-size: 1.1rem;
-			margin-top: 1rem;
-			margin-bottom: .5rem;
-			text-align: center
-		}
-
-		footer div {
-			display: flex;
-			align-items: center;
-			justify-content: space-around
-		}
-
-		footer div a {
-			margin: 0 1rem 1rem 1rem
-		}
-
 		.intro {
 			min-height: 12vh;
 			display: flex;
@@ -234,7 +212,7 @@
 		.avatar {
 			width: 25rem;
 			height: 25rem;
-			background: url(./images/bighead.svg) no-repeat;
+			background: url(/29fa6e550c24be590fab73b6003dc00b3da835d1/9346c/images/bighead.svg) no-repeat;
 			display: inline-block;
 			margin-top: -5vh;
 			filter: drop-shadow(2px 4px 8px #585858)
@@ -272,14 +250,16 @@
 		}
 
 		.portfolio a.demoBtn {
-			border: 1px solid #2CF6B3;
+			color: #102542;
+			background-color: #2cf6b3;
 			margin: 1rem 0;
 			width: 10rem;
 			text-align: center
 		}
 
 		.portfolio a.repoBtn {
-			border: 1px solid #CE2D4F;
+			background-color: #ce2d4f;
+			color: #f5f5f5;
 			width: 10rem;
 			text-align: center
 		}
@@ -296,69 +276,21 @@
 			border-radius: .5rem
 		}
 
-		.contact {
-			width: 100%;
-			background-color: rgba(183, 211, 242, .4);
-			padding: 2rem
+		.portfolio h3+h5 {
+			margin-top: 0
 		}
 
 		.contact input {
-			font-family: 'Merriweather', serif
-		}
-
-		.getInTouch {
-			width: 80%;
-			margin: 2rem auto
-		}
-
-		.sendMsg {
-			width: 80%;
-			margin: 2rem auto
+			font-family: Merriweather, serif
 		}
 
 		.hidden {
 			display: none
 		}
 
-		.contact textarea {
-			height: 15rem;
-			width: 45vw;
-			font-family: 'Merriweather', serif;
-			padding: .5rem 1rem
-		}
-
-		.basicInfo {
-			display: flex;
-			justify-content: space-between;
-			width: 45vw;
-			margin-bottom: 2rem
-		}
-
-		.basicInfo>p {
-			display: flex;
-			flex-direction: column
-		}
-
-		.basicInfo input {
-			padding: .5rem 1rem;
-			width: 15vw
-		}
-
-		.basicInfo input[type=email] {
-			width: 25vw
-		}
-
-		.contact button {
-			background-color: #102542;
-			color: whitesmoke;
-			border: none;
-			padding: 1rem 2rem;
-			margin-top: 1rem
-		}
-
 		@media (min-width:900px) and (max-width:1600px) {
 			body>header {
-				height: 12vh
+				height: 14vh
 			}
 		}
 
@@ -379,7 +311,7 @@
 			}
 
 			nav {
-				width: 55vw;
+				width: 65vw;
 				justify-content: space-evenly
 			}
 
@@ -409,46 +341,9 @@
 				padding: .5rem 0
 			}
 
-			.portfolio a.demoBtn,
-			.portfolio a.repoBtn,
-			.portfolio div h3 {
-				align-self: center
-			}
-
-			.portfolio a.demoBtn {
-				background-color: #2CF6B3;
-				color: #102542
-			}
-
-			.contact {
-				padding: 1rem
-			}
-
-			.getInTouch,
-			.sendMsg,
-			.basicInfo {
-				width: 90%
-			}
-
-			.basicInfo {
-				flex-direction: column;
-				margin-bottom: 0
-			}
-
-			.basicInfo>p {
-				display: flex;
-				flex-direction: column;
-				margin-bottom: 1rem
-			}
-
-			.basicInfo input[type=email],
-			.basicInfo input[type=text] {
-				width: 80vw
-			}
-
-			.contact textarea {
-				height: 10rem;
-				width: 80vw
+			div.itemDetails {
+				padding-left: 10vw;
+				padding-bottom: 4vh
 			}
 		}
 	</style>
@@ -488,7 +383,7 @@
 						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_80/v1605629011/personalSite/gatherApp.png"
 						alt="Gather app" width="720" height="350" loading=lazy>
 				</a>
-				<div>
+				<div class="itemDetails">
 					<h3>Gather</h3>
 					<h5>Built using React, Node, Express, and MongoDB</h5>
 					<a href="https://gatherapp.xyz/" target="_blank" class="demoBtn" rel="noreferrer">View demo</a>
@@ -502,7 +397,7 @@
 						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_80/v1605629012/personalSite/trentonSmiles.png"
 						alt="Trenton Smiles Dental" width="720" height="350" loading=lazy>
 				</a>
-				<div>
+				<div class="itemDetails">
 					<h3>Trenton Smiles Dental</h3>
 					<h5>Built using HTML, CSS, and JavaScript</h5>
 					<a href="https://trentonsmilesdental.ca" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
@@ -514,7 +409,7 @@
 						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_80/v1605629012/personalSite/scripteam.png"
 						alt="Scripteam" width="720" height="350" loading=lazy>
 				</a>
-				<div>
+				<div class="itemDetails">
 					<h3>Scripteam</h3>
 					<h5>Built using HTML and CSS</h5>
 					<a href="https://scripteam.netlify.app/" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
@@ -526,7 +421,7 @@
 						src="https://res.cloudinary.com/scloud1/image/upload/f_auto,fl_lossy,q_80/v1605629012/personalSite/primeFamilyClinic.png"
 						alt="Prime Family Clinic" width="720" height="350" loading=lazy>
 				</a>
-				<div>
+				<div class="itemDetails">
 					<h3>Prime Family Clinic</h3>
 					<h5>Built using HTML, CSS, and JavaScript</h5>
 					<a href="http://www.primefamilyclinic.com/" target="_blank" class="demoBtn" rel="noreferrer">View site</a>
@@ -550,20 +445,20 @@
 						</p>
 						<div class="basicInfo">
 							<p>
-								<label for="fullName">NAME</label>
+								<label for="fullName">Name</label>
 								<input type="text" name="fullName" id="fullName" placeholder="Enter your name" required />
 							</p>
 							<p>
-								<label for="email">EMAIL</label>
+								<label for="email">Email</label>
 								<input type="email" name="email" id="email" placeholder="Enter your email" required />
 							</p>
 						</div>
 						<p>
-							<label for="message">MESSAGE</label><br>
+							<label for="message">Message</label><br>
 							<textarea name="message" id="message" cols="50" rows="5" placeholder="Enter your message"></textarea>
 						</p>
 						<p>
-							<button type="submit">SUBMIT</button>
+							<button type="submit">Submit</button>
 						</p>
 					</form>
 				</div>
