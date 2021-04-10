@@ -66,9 +66,7 @@ a {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   font-family: 'Lato', sans-serif;
 }
 
@@ -188,27 +186,27 @@ h1.tagLine {
 }
 
 .portfolio a.demoBtn {
-  border: 1px solid #2CF6B3;
+  color: #102542;
+  background-color: #2CF6B3;
   margin: 1rem 0;
   width: 10rem;
   text-align: center;
 }
 
 .portfolio a.demoBtn:hover {
-  background-color: #2CF6B3;
-  color: #102542;
+  filter: brightness(105%);
   transform: scale(1.1);
 }
 
 .portfolio a.repoBtn {
-  border: 1px solid #CE2D4F;
+  background-color: #CE2D4F;
+  color: whitesmoke;
   width: 10rem;
   text-align: center;
 }
 
 .portfolio a.repoBtn:hover {
-  background-color: #CE2D4F;
-  color: whitesmoke;
+  filter: brightness(105%);
   transform: scale(1.1);
 }
 
@@ -297,7 +295,7 @@ label span {
 }
 
 .contact button:hover {
-  background-color: rgb(16, 37, 66, .95);
+  filter: brightness(105%);
   transform: scale(1.05);
   transition: all .2s;
   cursor: pointer;
@@ -498,15 +496,9 @@ article>section p {
     padding: .5rem 0;
   }
 
-  .portfolio a.demoBtn,
-  .portfolio a.repoBtn,
-  .portfolio div h3 {
-    align-self: center;
-  }
-
-  .portfolio a.demoBtn {
-    background-color: #2CF6B3;
-    color: #102542;
+  div.itemDetails {
+    padding-left: 10vw;
+    padding-bottom: 4vh;
   }
 
   .contact {
